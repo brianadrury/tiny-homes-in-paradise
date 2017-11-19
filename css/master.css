@@ -1,4 +1,18 @@
 body{
   color:white;
   background-color:yellow;
+  transition: background-color 200ms ease-in-out;
+  animation: flasher 200ms infinite;
+}
+
+@keyframes flasher {
+  0%{
+    background-color: yellow;
+  }
+  50%{
+    background-color: white;
+  }
+  100%{
+    background-color: yellow;
+  }
 }
